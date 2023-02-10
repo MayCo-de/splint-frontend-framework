@@ -22,7 +22,16 @@ Customize your new header like this:
 // add a logo to your header
 newHeader.setLogo("./assets/logo_icon.svg", "Test GmbH");
 
+// without icon image
+newHeader.setLogo("", "Test GmbH");
+
+// without text
+newHeader.setLogo("./assets/logo_icon.svg", "");
+```
+
+Style your Component:
+
+```javascript
 // change the styling of your header -> you can use every css attribute
 newHeader.setStyle("background-color", "aqua");
-
 ```
