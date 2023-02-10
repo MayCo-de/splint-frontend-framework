@@ -2,7 +2,7 @@
 description: Create a header for your page.
 ---
 
-# Header
+# 🔗 Header
 
 First import the Header module:
 
