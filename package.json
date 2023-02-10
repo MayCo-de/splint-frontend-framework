@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/MayCo-de/splint-frontend#readme",
   "dependencies": {
-    "jquery": "^3.6.3"
+    "jquery": "^3.6.3",
+    "jsdoc": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.27.5"
   }
 }
