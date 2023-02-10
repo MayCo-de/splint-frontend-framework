@@ -1,0 +1,22 @@
+{
+  "name": "splint-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayCo-de/splint-frontend.git"
+  },
+  "author": "Colin Grahm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayCo-de/splint-frontend/issues"
+  },
+  "homepage": "https://github.com/MayCo-de/splint-frontend#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
+}
