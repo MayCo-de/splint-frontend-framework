@@ -22,7 +22,7 @@ Customize your new header like this:
 // add a logo to your header
 newHeader.setLogo("./assets/logo_icon.svg", "Test GmbH");
 
-// change the styling of your header
+// change the styling of your header -> you can use every css attribute
 newHeader.setStyle("background-color", "aqua");
 
 ```
