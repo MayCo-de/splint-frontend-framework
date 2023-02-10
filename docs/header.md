@@ -29,6 +29,13 @@ newHeader.setLogo("", "Test GmbH");
 newHeader.setLogo("./assets/logo_icon.svg", "");
 ```
 
+Setup a new href for the onclick event:
+
+```javascript
+// Enter your URL
+newHeader.setLogoTarget("./index.html");
+```
+
 Style your Component:
 
 ```javascript
