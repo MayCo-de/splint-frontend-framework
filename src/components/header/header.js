@@ -2,12 +2,16 @@
 /**
  *
  * @class
+ *
  * @name Header
  *
  * @description Create a header.
  *
  * @see {@link setLogo()}
  * @see {@link setLogoTarget()}
+ * @see {@link addLink()}
+ * @see {@link removeLink()}
+ * @see {@link addThemeButton()}
  * @see {@link setStyle()}
  *
  * @example
@@ -36,6 +40,8 @@ class Header {
 
     /**
      *  
+     * @method
+     *
      * @name setLogo()
      * @description Setup logo for header.
      *
@@ -52,15 +58,17 @@ class Header {
         const logoLinkBox = $('#logoLinkBox');    
 
         if(logoPath != "") {
-            logoLinkBox.append('<img class="logoIcon" src="'+logoPath+'">');
+            logoLinkBox.append('<img class="logoIcon" src="' + logoPath + '">');
         }
 
         if(logoText != "") {
-            logoLinkBox.append('<span class="logoText">'+logoText+'</span>');
+            logoLinkBox.append('<span class="logoText">' + logoText + '</span>');
         }   
     }
 
     /**
+     *
+     * @method
      *
      * @name setLogoTarget()
      * @description Setup logos href link for onclick event.
@@ -77,11 +85,79 @@ class Header {
         $('#logoLinkBox').attr('href', logoTarget);
     }
 
-    addLink(name, file){
-        $('#headerNavigation').append('<a href="' + file + '">' + name + '</a>');
+    /**
+     *
+     * @method
+     *
+     * @name addLink()
+     * @description Add link to header.
+     *
+     * @see {@link Header}
+     *
+     * @param {string} name - The title of the Link.
+     * @param {string} target - The target file of the link (href).
+     *
+     * @example 
+     * newHeader.addLink("Home", "./index.html");
+     *
+     */
+    addLink(name, target){
+        $('#headerNavigation').append('<a class="navLink" id="navLink-' + name + '" href="' + target + '">' + name + '</a>');
     }
 
     /**
+     *
+     * @method
+     *
+     * @name removeLink()
+     * @description Remove link from header.
+     *
+     * @see {@link Header}
+     *
+     * @param {string} name - The title of the Link.
+     *
+     * @example 
+     * newHeader.removeLink("Home");
+     *
+     */
+    removeLink(name){
+        $('#navLink-' + name).remove();
+    }
+
+    /**
+     *
+     * @method
+     *
+     * @name addThemeButton()
+     * @description Add theme Button to header.
+     *
+     * @see {@link Header}
+     *
+     * @param {boolean} makeThemeButton - Set true for theme button.
+     *
+     * @example 
+     * newHeader.addThemeButton(true);
+     *
+     */
+    addThemeButton(makeThemeButton) {
+        if(makeThemeButton === true) {
+            const bodyTheme = $('body').attr('theme');
+
+            $('#headerNavigation').append('<button class="theButton" id="themeButton"></button>');
+        
+            if(bodyTheme == "light") {
+                $('#themeButton').append('<i class="bi bi-moon-fill"></i>');
+            }
+
+            if(bodyTheme == "dark") {
+                $('#themeButton').append('<i class="bi bi-brightness-high-fill"></i>');
+            }
+        }
+    }
+
+    /**
+     *
+     * @method
      *
      * @name setStyle()
      * @description Customize CSS styling of the header.
@@ -103,3 +179,10 @@ class Header {
 }
 
 export default Header;
+
+// Set current link to active
+$('body').ready(function() {
+    const acitveLink = "#navLink-" + $('body').attr("siteName");
+    $(acitveLink).addClass("active");
+});
+

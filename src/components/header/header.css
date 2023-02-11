@@ -1,5 +1,3 @@
-@import url('../../../main.css');
-
 .header {
     position: fixed;
     width: 100%;
@@ -36,7 +34,7 @@
     margin-left: .5rem;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333 !important;
+    color: var(--primary-text);
 }
 
 .header #headerNavigation {
@@ -45,13 +43,46 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 
-.header #headerNavigation a {
+.header #headerNavigation .navLink {
     position: relative;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-left: 1.5rem;
-    color: #a8a8a8;
+    padding: .4rem .8rem;
+    margin: 0 .5rem;
+    color: var(--secondary-text);
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid transparent;
+}
+
+.header #headerNavigation .navLink:hover {
+    cursor: pointer; 
+    background-color: var(--primary);
+    color: var(--button-text);
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.header #headerNavigation .active {
+    border-bottom: 4px solid var(--primary);
+}
+
+.header #headerNavigation #themeButton {
+    margin-left: .5rem;
+    background-color: transparent;
+    color: var(--secondary-text);
+    font-size: 1rem;
+    padding: .6rem;
+    border: none;
+}
+
+.header #headerNavigation #themeButton:hover {
+    cursor: pointer;
+    background-color: var(--bg-color-dark);
+    border-radius: 8px;
+    transition: .4s ease;
 }

@@ -1,0 +1,37 @@
+@import url('typography.css');
+
+:root {
+
+    /* 
+    /*=============================================
+    =            Font configs            =
+    =============================================*/
+    
+    --main-font: "Montserrat";
+    
+    /*=====  End of Font configs  ======*/
+    
+    
+
+    /* 
+    /*=============================================
+    =            Color configs            =
+    =============================================*/
+    
+    --primary: #DC143C;
+    --primary-light: #EC3257;
+    --primary-dark: #B21031;
+
+    --accent: #FFDE2E;
+    --accent-light: #FFE55C;
+    --accent-dark: #FFD700;
+
+    --primary-text: #333;
+    --secondary-text: #a8a8a8;
+    --button-text: #fff;
+
+    --bg-color: #fff;
+    --bg-color-dark: #d6d6d6;
+    
+    /*=====  End of Color configs  ======*/
+}
