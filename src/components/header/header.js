@@ -7,6 +7,7 @@
  * @description Create a header.
  *
  * @see {@link setLogo()}
+ * @see {@link setLogoTarget()}
  * @see {@link setStyle()}
  *
  * @example
@@ -27,6 +28,8 @@ class Header {
      */
     constructor() {
         $('body').append('<div class="header"></div>');
+        $('.header').append('<a id="logoLinkBox" href="./index.html"></a>');
+        $('.header').append('<nav id="headerNavigation"></nav>');
         
         return this;
     }
@@ -46,7 +49,6 @@ class Header {
      *
     */
     setLogo(logoPath, logoText) {
-        $('.header').append('<a id="logoLinkBox" href="./index.html"></a>');
         const logoLinkBox = $('#logoLinkBox');    
 
         if(logoPath != "") {
@@ -56,6 +58,27 @@ class Header {
         if(logoText != "") {
             logoLinkBox.append('<span class="logoText">'+logoText+'</span>');
         }   
+    }
+
+    /**
+     *
+     * @name setLogoTarget()
+     * @description Setup logos href link for onclick event.
+     *
+     * @see {@link Header}
+     *
+     * @param {string} logoTarget - Enter the href link for the logo.
+     *
+     * @example 
+     * newHeader.setLogoTarget("./index.html");
+     *
+     */
+    setLogoTarget(logoTarget) {
+        $('#logoLinkBox').attr('href', logoTarget);
+    }
+
+    addLink(name, file){
+        $('#headerNavigation').append('<a href="' + file + '">' + name + '</a>');
     }
 
     /**

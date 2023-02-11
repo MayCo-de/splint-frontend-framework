@@ -5,9 +5,11 @@
     width: 100%;
     height: 4rem;
     display: flex;
+    flex-direction: row;
     alignItems: center;
-    justifyContent: start;
-    background-color: aqua;
+    justifyContent: space-between !important;
+    background-color: var(--bg-color);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
 }
 
 .header #logoLinkBox {
@@ -15,10 +17,11 @@
     margin-left: 3rem;
     min-width: 3rem;
     width: auto;
+    max-width: 15rem;
     height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-decoration: none;
 }
 
@@ -34,4 +37,21 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: #333 !important;
+}
+
+.header #headerNavigation {
+    position: absolute;
+    right: 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header #headerNavigation a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+    color: #a8a8a8;
 }
