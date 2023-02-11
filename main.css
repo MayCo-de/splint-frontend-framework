@@ -1,16 +1,8 @@
-@import url('src/typography.css');
+@import url('src/config.css');
 @import url('src/components/components.css');
 
 
-:root {
-    --main-font: "Montserrat";
 
-
-    --primary: "";
-
-
-    --primary-text: #333;
-}
 
 * {
     margin: 0;
