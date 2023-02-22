@@ -7,6 +7,12 @@ The frontend library for MayCo's "Splint"-framework.
 
 #### Instalation
 
+##### NPM
+Run the following command:
+```
+npm install @mayco/splint-frontend-framework
+```
+
 ##### CDN
 Add this to your header
 
