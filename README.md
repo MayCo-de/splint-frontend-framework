@@ -48,7 +48,7 @@ To customize the colors you have to setup these css variables:
 ```
 
 #### Example
-Click [here]() for the example website.
+Click [here](https://maycodev.colingrahm.de/examples/header/) for the example website.
 
 #### Author
 [CGWebDev2003](https://github.com/CGWebDev2003)
