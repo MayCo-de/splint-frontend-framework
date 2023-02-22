@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
     --primary: #DC143C;
     --primary-dark: #B21031;
@@ -7,4 +8,22 @@
 
     --primary-text: #333;
     --secondary-text: #cecece;
+=======
+:root {
+    --primary: #DC143C;         /* Primary color */
+    --primary-dark: #B21031;    /* Primary color hovered */
+
+    --bg-color: #ffffff;        /* Background color */
+    --bg-color-dark: #cecece;   /* Dark background color */
+
+    --primary-text: #333;       /* Primary text color */
+    --secondary-text: #cecece;  /* Secondary text color */
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+>>>>>>> Stashed changes
 }
