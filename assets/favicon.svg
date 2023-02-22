@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1080px" height="1080px" viewBox="0 0 1080 1080" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="273.6096" y1="-332.52335" x2="214.58127" y2="495.88855" id="gradient_1">
+      <stop offset="0%" stop-color="#FF274B" />
+      <stop offset="31.32941%" stop-color="#FF284B" />
+      <stop offset="100%" stop-color="#F3052C" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="84.03275" y1="0" x2="167.12683" y2="236.67703" id="gradient_2">
+      <stop offset="0%" stop-color="#F34965" />
+      <stop offset="36.6865%" stop-color="#F9294C" />
+      <stop offset="56.358467%" stop-color="#FD1940" />
+      <stop offset="100%" stop-color="#E01033" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="21.94594" y1="-67.64652" x2="97.22309" y2="147.02191" id="gradient_3">
+      <stop offset="0%" stop-color="#FF1940" />
+      <stop offset="15.002364%" stop-color="#FF1A41" />
+      <stop offset="34.325058%" stop-color="#FF2549" />
+      <stop offset="79.36077%" stop-color="#F52547" />
+      <stop offset="100%" stop-color="#EB2646" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="54.558006" y1="337.99588" x2="182.57957" y2="201.1788" id="gradient_4">
+      <stop offset="0%" stop-color="#8C021A" />
+      <stop offset="20.611835%" stop-color="#9F021D" />
+      <stop offset="54.718643%" stop-color="#D00325" />
+      <stop offset="100%" stop-color="#F3052C" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="114.41954" y2="294.04373" id="gradient_5">
+      <stop offset="0%" stop-color="#F34965" />
+      <stop offset="12.420809%" stop-color="#F43D5B" />
+      <stop offset="27.001265%" stop-color="#F72A4C" />
+      <stop offset="72.92232%" stop-color="#FC1239" />
+      <stop offset="100%" stop-color="#ED042B" />
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="139.20558" y1="76.45037" x2="32.79899" y2="430.87405" id="gradient_6">
+      <stop offset="0%" stop-color="#F3052C" />
+      <stop offset="100%" stop-color="#BF0323" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="30" />
+      <feGaussianBlur stdDeviation="25" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.2509804 0 0 0 0 0.003921569 0 0 0 0 0.043137256 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <rect width="1080" height="1080" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip_1)">
+    <use xlink:href="#artboard_1" stroke="none" fill="#FFFFFF" fill-opacity="0" />
+    <g filter="url(#filter_1)" artboard="541255a2-62b7-4c6d-8aa9-a76ce45e88fe">
+      <g id="Gruppieren-2" transform="translate(267 186)">
+        <path d="M216.543 147.022L393.403 121.293L432.201 278.423L267.805 658.842L46.0263 348.167C46.0263 348.167 46.0521 348.204 46.0356 348.181C46.0332 348.177 46.0299 348.173 46.026 348.167L45.96 348.074L216.543 147.022Z" id="Rechteck" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+        <path d="M103.41 75.3487L198.865 0L217.426 147.941L0 401.554L103.41 75.3487Z" id="Rechteck-2" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+        <path d="M198.865 0L393.311 19.2966L393.311 121.293L217.426 147.022L198.865 0Z" id="Rechteck-3" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+        <path d="M45.96 348.019L267.805 658.842L282.83 709.38L96.3391 688.246L0 401.554L45.96 348.019Z" id="Rechteck-4" fill="url(#gradient_4)" fill-rule="evenodd" stroke="none" />
+        <path d="M393.311 19.2966L546.216 313.34L432.2 278.423L393.311 121.293L393.311 19.2966Z" id="Rechteck-5" fill="url(#gradient_5)" fill-rule="evenodd" stroke="none" />
+        <path d="M432.2 278.507L546.216 313.34L282.831 709.381L267.805 658.842L432.2 278.507Z" id="Rechteck-6" fill="url(#gradient_6)" fill-rule="evenodd" stroke="none" />
+        <path d="M217.426 147.022L393.311 121.293" id="Linie" fill="none" fill-rule="evenodd" stroke="#FC1F43" stroke-width="1" stroke-linecap="square" />
+        <path d="M45.96 348.074L217.426 147.022" id="Linie-2" fill="none" fill-rule="evenodd" stroke="#FD0F39" stroke-width="1" stroke-linecap="square" />
+        <path d="M1.76778 399.716L45.96 348.074" id="Linie-3" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M217.426 147.022L198.865 0" id="Linie-4" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M393.311 121.293L393.311 19.2966" id="Linie-5" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M393.311 121.293L432.2 278.423" id="Linie-6" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M546.216 313.34L432.2 278.423" id="Linie-7" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M45.96 348.074L267.805 658.842" id="Linie-8" fill="none" fill-rule="evenodd" stroke="#FC002A" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M267.805 658.842L432.2 278.423" id="Linie-9" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+        <path d="M267.805 658.842L282.831 709.38" id="Linie-10" fill="none" fill-rule="evenodd" stroke="#F2052C" stroke-width="0.5" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>
