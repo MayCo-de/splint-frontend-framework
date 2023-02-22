@@ -178,8 +178,6 @@ class Header {
 
 }
 
-export default Header;
-
 // Set current link to active
 $('body').ready(function() {
     const acitveLink = "#navLink-" + $('body').attr("siteName");
