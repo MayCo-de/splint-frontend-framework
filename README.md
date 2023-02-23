@@ -8,7 +8,7 @@ The frontend library for MayCo's "Splint"-framework.
 #### Instalation
 
 ##### NPM
-Run the following command:
+Run the following command to add the [npm package](https://www.npmjs.com/package/@mayco/splint-frontend-framework):
 ```
 npm install @mayco/splint-frontend-framework
 ```
