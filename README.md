@@ -17,8 +17,8 @@ npm install @mayco/splint-frontend-framework
 Add this to your header
 
 ```html
-<link rel="stylesheet" href="https://cdn.colingrahm.de/frameworks/splint-frontend/components/header/header_1_0_0/header.min.css">
-<script src="https://cdn.colingrahm.de/frameworks/splint-frontend/components/header/header_1_0_0/header.min.js"></script> 
+<link rel="stylesheet" href="https://cdn.colingrahm.de/frameworks/splint-frontend/components/header/header_1_2_12/header.min.css">
+<script src="https://cdn.colingrahm.de/frameworks/splint-frontend/components/header/header_1_2_12/header.min.js"></script> 
 ```
 
 #### Usage
