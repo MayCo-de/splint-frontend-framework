@@ -87,3 +87,130 @@
     border-radius: 8px;
     transition: .4s ease;
 }
+
+.mobileSidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    max-width: "20rem";
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: var(--bg-color);
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, .15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    z-index: 1200000;
+}
+
+.mobileSidebar #sidebarHeader {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#openMenuButton {
+    position: absolute;
+    top: .5rem;
+    right: 3rem;
+    padding: .6rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--primary-text);
+}
+
+#openMenuButton:hover {
+    cursor: pointer;
+    background-color: var(--bg-color-dark);
+    transition: .4s ease;
+}
+
+#openMenuButton:focus {
+    cursor: pointer;
+    background-color: var(--primary) !important ;
+    color: var(--button-text);
+    transition: .4s ease;
+
+}
+
+#closeMenuButton {
+    position: relative;
+    margin-right: 1rem;
+    padding: .6rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: var(--primary-text);
+}
+
+#closeMenuButton:hover {
+    cursor: pointer;
+    background-color: var(--bg-color-dark);
+    transition: .4s ease;
+}
+
+#closeMenuButton:focus {
+    cursor: pointer;
+    background-color: var(--primary) !important ;
+    color: var(--button-text);
+    transition: .4s ease;
+}
+
+#sidebarHeadline {
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+#closeMenuButton:hover {
+    cursor: pointer;
+
+}
+
+#closeMenuButton:focus {
+    background-color: var(--bg-color-dark);
+    transition: .4s ease;
+}
+
+#sideNav {
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: .3rem;
+}
+
+.sideNavLink {
+    position: relative;
+    left: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+}
+
+.sideNavLink:hover { 
+    cursor: pointer;
+    background-color: var(--bg-color-dark);
+    transition: .4s ease;
+}
+
+.sideNavLink:focus {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--button-text);
+    transition: .4s ease;
+}

@@ -40,10 +40,12 @@ To customize the colors you have to setup these css variables:
     --primary-dark: #B21031;    /* Primary color hovered */
 
     --bg-color: #ffffff;        /* Background color */
-    --bg-color-dark: #cecece;   /* Dark background color */
+    --bg-color-dark: #e9e9e9;   /* Dark background color */
+    --bg-color-dark-2: #cecece; /* Second dark background color */
 
     --primary-text: #333;       /* Primary text color */
     --secondary-text: #cecece;  /* Secondary text color */
+    --button-text: #ffffff;     /* Button text color */
 }
 ```
 
