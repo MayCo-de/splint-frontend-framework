@@ -32,6 +32,7 @@ newHeader.addLink('Home', './index.html');                  // Add a link to nav
 newHeader.addLink('Contact', './index2.html');              // Add another link to nav
 ```
 
+##### Customize colors
 To customize the colors you have to setup these css variables:
 
 ```css
@@ -47,6 +48,40 @@ To customize the colors you have to setup these css variables:
     --secondary-text: #cecece;  /* Secondary text color */
     --button-text: #ffffff;     /* Button text color */
 }
+```
+##### Set custom logo icon
+```javascript
+newHeader.setLogo("../../assets/favicon.svg", "Test GmbH");
+```
+
+##### Set logo target page
+```javascript
+newHeader.setLogoTarget("index.html");
+```
+
+##### Add a navigation link
+```javascript
+newHeader.addLink('Home', './index.html');
+```
+
+##### Remove a navigation link
+```javascript
+newHeader.removeLink('Home');
+```
+
+##### Set style
+Enter the target attribute first and the value second.
+```javascript
+newHeader.setStyle("background-color", "blue");
+```
+
+##### Change view
+```javascript
+// Set mobile view
+newHeader.mobile();
+
+// Set desktop view
+newHeader.desktop();
 ```
 
 #### Example
