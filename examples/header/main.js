@@ -1,6 +1,4 @@
 
-
-
 const newHeader = new Header();                             // Create a new header
 
 newHeader.setLogo("../../assets/favicon.svg", "Test GmbH"); // Setup the icon
@@ -31,11 +29,6 @@ $( window ).resize(function() {
     const logoWidth     = $("#logoLinkBox").width();
     const navWidth      = $("#headerNavigation").width();
     const minWidth      = navWidth+logoWidth+12*16;
-
-    console.log("Header width:     " + headerWidth);
-    console.log("Navigation width: " + navWidth);
-    console.log("Logo width:       " + logoWidth);
-    console.log("Minimun width:    " + minWidth + "rem");
 
     if(headerWidth < minWidth) {
         newHeader.mobile();
