@@ -1,6 +1,6 @@
 {
   "name": "@mayco/splint-frontend-framework",
-  "version": "1.2.47",
+  "version": "1.2.48",
   "description": "The frontend framework for MayCo's \"Splint\"-framework.",
   "type": "javascript",
   "main": "index.html",
