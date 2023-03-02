@@ -1,4 +1,4 @@
-# splint-frontend
+# splint-frontend [![JS Framework](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
 The frontend library for MayCo's "Splint"-framework.
 
 ## Components
