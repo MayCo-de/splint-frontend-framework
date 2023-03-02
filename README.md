@@ -1,6 +1,9 @@
 # splint-frontend <img src="https://skillicons.dev/icons?i=js" width="25px" height="25px" style="margin-left: .5rem;" alt="JavaScript icon"></img> <img src="https://skillicons.dev/icons?i=jquery" width="25px" height="25px" style="margin-left: .25rem;" alt="JavaScript icon"></img> <img src="https://skillicons.dev/icons?i=css" width="25px" height="25px" style="margin-left: .25rem;" alt="JavaScript icon"></img>
 The frontend library for MayCo's "Splint"-framework.
 
+## Whats new?
+> <span style="color: #a8a8a8;"> Latest version *1.2.47*</span>
+
 ## Components
 
 ### Header component
