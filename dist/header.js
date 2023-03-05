@@ -1,3 +1,18 @@
+function require(script) {
+    $.ajax({
+        url: script,
+        dataType: "script",
+        async: false,           // <-- This is the key
+        success: function () {
+            // all good...
+        },
+        error: function () {
+            throw new Error("Could not load script " + script);
+        }
+    });
+}
+
+// import openSidebar from "./../components/header/headerController.js";
 
 /**
  * 
@@ -77,7 +92,7 @@ function delay(time) {
  * @returns New Header to your page.
  *
  */
-class Header {
+export default class Header {
     /**
      * 
      * @returns {object} this
@@ -86,6 +101,10 @@ class Header {
      *
      */
     constructor() {
+        // super();
+
+        // this.on("click", openSidebar);
+
         $('body').append('<div class="header"></div>');
         $('.header').append('<a id="logoLinkBox" href="./index.html"></a>');
         $('.header').append('<nav id="headerNavigation"></nav>');
@@ -198,14 +217,14 @@ class Header {
         if(makeThemeButton === true) {
             const bodyTheme = $('body').attr('theme');
 
-            $('#headerNavigation').append('<button class="theButton" id="themeButton"></button>');
+            $('#headerNavigation').append('<button class="themeButton" id="themeButton"><i id="themeIcon" class="bi bi-brightness-high-fill"></i></button>');
         
             if(bodyTheme == "light") {
-                $('#themeButton').append('<i class="bi bi-moon-fill"></i>');
+                $('#themeButton').append('<i id="themeIcon" class="bi bi-moon-fill"></i>');
             }
 
             if(bodyTheme == "dark") {
-                $('#themeButton').append('<i class="bi bi-brightness-high-fill"></i>');
+                $('#themeButton').append('<i id="themeIcon" class="bi bi-brightness-high-fill"></i>');
             }
         }
     }
@@ -247,6 +266,8 @@ class Header {
                 $(".openMenuButton")[i+1].remove();
             }
         } 
+
+        $("#themeButton").attr("onclick", "openSidebar()");
     }
 
     desktop() {
@@ -261,6 +282,8 @@ class Header {
 
         $(".mobileSidebar").remove();
     }
+
+    
 }
 
 // Set current link to active
@@ -270,7 +293,7 @@ $('body').ready(function() {
 });
 
 
-function openSidebar() {
+export function openSidebar() {
     $("body").append("<div class='mobileSidebar' id='mobileSidebar'></div>");
     const mobileSidebar = $("#mobileSidebar");
 
@@ -294,7 +317,7 @@ function openSidebar() {
     });
 }
 
-async function closeSidebar() {
+export async function closeSidebar() {
     animateCSS(".mobileSidebar", "flipOutY");
     await delay(600);
     $("#mobileSidebar").remove();
